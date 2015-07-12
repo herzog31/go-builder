@@ -1,6 +1,7 @@
 FROM golang:latest
 
 ENV GOPATH /go
+env PATH $GOPATH/bin:$PATH
 ENV BUILDPATH src
 ENV GOOS linux
 ENV GOARCH amd64
