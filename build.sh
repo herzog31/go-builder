@@ -9,6 +9,8 @@ echo "GET DEPENDENCIES"
 go get
 
 echo "BUILD GO PROJECT"
-CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo .
+echo "GOOS is $GOOS"
+echo "GOARCH is $GOARCH"
+CGO_ENABLED=0 go build -a -installsuffix cgo .
 
 ls -R
