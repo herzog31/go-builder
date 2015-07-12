@@ -9,6 +9,7 @@ echo "GET DEPENDENCIES"
 go get
 
 echo "GO TEST"
+go get -u github.com/jstemmer/go-junit-report
 go test -v | go-junit-report > report.xml
 
 echo "BUILD GO PROJECT"
