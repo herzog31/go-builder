@@ -15,6 +15,7 @@ go test -v | go-junit-report > report.xml
 echo "BUILD GO PROJECT"
 echo "GOOS is $GOOS"
 echo "GOARCH is $GOARCH"
+echo "GOARM is $GOARM"
 CGO_ENABLED=0 go build -a -installsuffix cgo .
 
 ls -R
